@@ -1,0 +1,18 @@
+server:
+  port: 10082
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    service-url:
+      defaultZone: http://localhost:8081/eureka/,http://localhost:9081/eureka
+
+spring:
+  application:
+    name: provider
+
+info:
+  name: provider02
+  server:
+    port: ${server.port}

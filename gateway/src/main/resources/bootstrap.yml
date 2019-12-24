@@ -1,0 +1,37 @@
+server:
+  port: 8080
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka,http://localhost:9081/eureka
+
+spring:
+  cloud:
+    gateway:
+      default-filters:
+        - name: Hystrix
+          args:
+            name: fallbackcmd
+            fallbackUri: forward:/defaultfallback
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: provider
+          uri: lb://provider
+          predicates:
+            - Path=/provider/**
+          filters:
+            - StripPrefix=1
+  application:
+    name: gateway
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
