@@ -1,10 +1,13 @@
+server:
+  port: 8080
+
 spring:
   profiles: dev
   application:
-    name: config-zuul-client
+    name: config-zuul
   cloud:
     config:
-      uri: http://localhost:8081
+      uri: http://localhost:8081/
       label: master
       profile: dev
 #      discovery:
