@@ -10,7 +10,7 @@ public class test {
 
     @RequestMapping("/hello")
     public String hello() {
-        return "hello world";
+        return "hello provider-01";
     }
 
     @GetMapping("/timeout")

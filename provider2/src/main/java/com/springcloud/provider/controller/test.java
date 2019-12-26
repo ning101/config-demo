@@ -9,6 +9,6 @@ public class test {
 
     @RequestMapping("/hello")
     public String hello() {
-        return "hello cloud";
+        return "hello provider-03";
     }
 }

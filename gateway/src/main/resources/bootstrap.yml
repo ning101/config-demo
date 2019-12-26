@@ -23,8 +23,12 @@ spring:
           uri: lb://provider
           predicates:
             - Path=/provider/**
-          filters:
-            - StripPrefix=1
+#          filters:
+#            - StripPrefix=1
+        - id: consumer
+          uri: lb://consumer
+          predicates:
+            - Path=/consumer/**
   application:
     name: gateway
 
