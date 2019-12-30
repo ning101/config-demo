@@ -4,6 +4,10 @@ server:
 spring:
   application:
     name: eureka-server
+  security:
+    user:
+      name: admin
+      password: admin
 
 eureka:
   server:
@@ -11,4 +15,4 @@ eureka:
     eviction-interval-timer-in-ms: 30000
   client:
     service-url:
-      defaultZone: http://localhost:9081/eureka
+      defaultZone: http://admin:admin@localhost:9081/eureka
