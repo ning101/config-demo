@@ -11,6 +11,13 @@ eureka:
 spring:
   application:
     name: consumer
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-server
+      profile: dev
+      label: master
 
 feign:
   hystrix:
