@@ -1,3 +1,6 @@
+server:
+  port: 8083
+
 eureka:
   client:
     service-url:
@@ -29,8 +32,3 @@ feign:
       min-request-size: 2048
     response:
       enabled: true
-
-info:
-  name: consumer
-  server:
-    port: ${server.port}

@@ -1,1 +1,12 @@
 hello: hello config
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: root
+    password: root
+
+info:
+  name: consumer
+  server:
+    port: ${server.port}

@@ -1,5 +1,5 @@
+hello: hello provider
 spring:
-  application: provider
   rabbitmq:
     host: localhost
     port: 5672
