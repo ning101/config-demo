@@ -1,0 +1,26 @@
+server:
+  port: 8089
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ning101/springCloud-demo.git
+          search-paths: '{config-center}'
+  application:
+    name: spring-cloud-config
+  rabbitmq:
+    host: 192.168.174.128
+    port: 5672
+    username: guest
+    password: guest
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
