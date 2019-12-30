@@ -1,0 +1,17 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka/,http://localhost:9081/eureka
+
+spring:
+  application: provider
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: root
+    password: root
+
+info:
+  name: provider
+  server:
+    port: ${server.port}
