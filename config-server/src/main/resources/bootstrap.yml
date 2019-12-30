@@ -7,7 +7,8 @@ spring:
       server:
         git:
           uri: https://github.com/ning101/springCloud-demo.git
-          search-paths: '{config-center}'
+          search-paths: config-center
+          default-label: master
   application:
     name: spring-cloud-config
   rabbitmq:
