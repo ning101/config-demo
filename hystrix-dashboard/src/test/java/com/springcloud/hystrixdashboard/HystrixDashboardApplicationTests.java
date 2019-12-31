@@ -1,10 +1,10 @@
-package com.springcloud.eurekaserver;
+package com.springcloud.hystrixdashboard;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class EurekaServerApplicationTests {
+class HystrixDashboardApplicationTests {
 
     @Test
     void contextLoads() {

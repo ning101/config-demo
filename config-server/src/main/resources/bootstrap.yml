@@ -2,6 +2,8 @@ server:
   port: 8089
 
 spring:
+  zipkin:
+    base-url: http://localhost:9411
   cloud:
     config:
       server:
@@ -19,7 +21,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://admin:admin@localhost:8081/eureka/,http://admin:admin@localhost:9081/eureka
+      defaultZone: http://admin:admin@localhost:8081/eureka/
 
 management:
   endpoints:
