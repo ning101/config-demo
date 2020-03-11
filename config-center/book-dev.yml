@@ -1,4 +1,3 @@
-hello: book
 spring:
   rabbitmq:
     host: localhost
@@ -16,6 +15,8 @@ spring:
       max-active: 20
       min-idle: 5
       max-wait: 30000
+  zipkin:
+    base-url:  http://127.0.0.1:9411/
 
 info:
   name: book
