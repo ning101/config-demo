@@ -1,0 +1,21 @@
+hello: book
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: root
+    password: root
+  datasource:
+    druid:
+      url: jdbc:mysql://127.0.0.1:3306/book?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+      username: root
+      password: root
+      initial-size: 5
+      max-active: 20
+      min-idle: 5
+      max-wait: 30000
+
+info:
+  name: book
+  server:
+    port: ${server.port}
