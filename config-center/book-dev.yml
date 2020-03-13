@@ -7,11 +7,11 @@ spring:
     password: root
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/book?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
-    username: root
-    password: root
     druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/book?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+      username: root
+      password: root
       initialSize: 5 #初始化连接大小
       minIdle: 5     #最小连接池数量
       maxActive: 20  #最大连接池数量
