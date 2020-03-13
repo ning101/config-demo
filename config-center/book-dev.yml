@@ -1,4 +1,4 @@
-hello: hello
+hello: hello,bus
 spring:
   rabbitmq:
     host: localhost
