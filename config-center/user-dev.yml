@@ -40,6 +40,6 @@ spring:
     base-url:  http://127.0.0.1:9411/
 
 info:
-  name: book
+  name: user
   server:
     port: ${server.port}
